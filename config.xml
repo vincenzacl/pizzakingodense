@@ -81,8 +81,7 @@
         
         <!-- Core plugins -->
         <!-- <gap:plugin name="org.apache.cordova.battery-status" source="npm" />  -->
-        <gap:plugin name="cordova-plugin-whitelist" spec="1.3.2" />
-		<gap:plugin name="org.apache.cordova.battery-status" spec="1.2.4" />
+        <gap:plugin name="org.apache.cordova.battery-status" spec="1.2.4" />
 		<gap:plugin name="org.apache.cordova.console" spec="1.0.7" />
 		<gap:plugin name="org.apache.cordova.device" spec="1.1.6" />
 		<gap:plugin name="org.apache.cordova.device-motion" spec="1.2.5" />
