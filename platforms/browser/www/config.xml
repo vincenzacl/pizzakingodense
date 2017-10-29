@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.webwapsolutions.epizzaappGrejsPizza" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>Grejs Pizza</name>
+<widget id="com.webwapsolutions.epizzaappPizzaKingOdense" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>Pizza King Odense</name>
     <description>
         
-		Grejs Pizza App powered by ePizza Suite Pro - leveret af Web Wap Solutions
+		Pizza King Odense App powered by ePizza Suite Pro - leveret af Web Wap Solutions
     </description>
     <author email="support@webwapsolutions.com" href="http://webwapsolutions.com">
         Web Wap Solutions Team
@@ -82,7 +82,7 @@
     <preference name="AndroidLaunchMode" value="singleTask" />
     <preference name="KeepRunning" value="true" />
     <preference name="InAppBrowserStorageEnabled" value="true" />
-    <preference name="LoadingDialog" value="Grejs Pizza, Velkommen til Grejs Pizza" />
-    <preference name="LoadingPageDialog" value="Grejs Pizza, Velkommen til Grejs Pizza" />
+    <preference name="LoadingDialog" value="Pizza King Odense, Velkommen til Pizza King Odense" />
+    <preference name="LoadingPageDialog" value="Pizza King Odense, Velkommen til Pizza King Odense" />
     <preference name="LogLevel" value="WARN" />
 </widget>

@@ -4,13 +4,13 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         xmlns:android = "http://schemas.android.com/apk/res/android"
-        id        = "com.webwapsolutions.epizzaappGrejsPizza"
+        id        = "com.webwapsolutions.epizzaappPizzaKingOdense"
         version   = "1.0.0">
 
-    <name>Grejs Pizza</name>
+    <name>Pizza King Odense</name>
     <description>
         <!--ePizza Suite App til din hjemmeside-->
-		Grejs Pizza App powered by ePizza Suite Pro - leveret af Web Wap Solutions
+		Pizza King Odense App powered by ePizza Suite Pro - leveret af Web Wap Solutions
     </description>
     <author href="http://webwapsolutions.com" email="support@webwapsolutions.com">
         Web Wap Solutions Team
@@ -68,8 +68,8 @@
     <preference name="KeepRunning"                value="true"/>
     <preference name="InAppBrowserStorageEnabled" value="true"/>
     
-    <preference name="LoadingDialog" value="Grejs Pizza, Velkommen til Grejs Pizza"/>
-    <preference name="LoadingPageDialog" value="Grejs Pizza, Velkommen til Grejs Pizza"/>
+    <preference name="LoadingDialog" value="Pizza King Odense, Velkommen til Pizza King Odense"/>
+    <preference name="LoadingPageDialog" value="Pizza King Odense, Velkommen til Pizza King Odense"/>
     <preference name="LogLevel" value="WARN"/>
     
     <gap:config-file platform="android" parent="/manifest/application">
