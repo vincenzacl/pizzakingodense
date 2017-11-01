@@ -1,25 +1,25 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.webwapsolutions.epizzaappPizzaKingOdense" version="1.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="com.webwapsolutions.epizzaappPizzaKingOdense" version="1.0.2" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>Pizza King Odense</name>
     <description>
         
-		Pizza King Odense App powered by ePizza Suite Pro - leveret af Web Wap Solutions
+		Pizza King Odense - Restaurant App powered by eRestaurant Suite Pro - leveret af Web Wap Solutions
     </description>
     <author email="support@webwapsolutions.com" href="http://webwapsolutions.com">
-        Web Wap Solutions Team
+        Web Wap Solutions Team - 2017
     </author>
     <dependency id="cordova-plugin-geolocation" />
     <dependency id="cordova-plugin-dialogs" />
     <gap:config-file parent="/manifest/application" platform="android">
         <activity android:launchMode="singleInstance" />
     </gap:config-file>
-    <gap:plugin name="org.apache.cordova.inappbrowser" />
-    <access />
-    <access origin="*" />
-    <allow-intent href="tel:*" />
+    <allow-navigation href="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
     <allow-intent href="sms:*" />
-    <allow-intent href="mailto:*" />
+    <allow-intent href="tel:*" />
     <allow-intent href="geo:*" />
+    <allow-intent href="*" />
     <icon src="res/screen/generic.png" />
     <icon gap:platform="android" gap:qualifier="ldpi" src="res/screen/android/drawable-ldpi/ic_launcher.png" />
     <icon gap:platform="android" gap:qualifier="mdpi" src="res/screen/android/drawable-mdpi/ic_launcher.png" />
@@ -52,7 +52,7 @@
     <icon gap:platform="ios" height="50" src="res/screen/ios/Icon-50.png" width="50" />
     <icon gap:platform="ios" height="100" src="res/screen/ios/Icon-50@2x.png" width="100" />
     <preference name="permissions" value="none" />
-    <preference name="phonegap-version" value="cli-6.5.0" />
+    <preference name="phonegap-version" value="cli-7.0.1" />
     <preference name="SplashScreen" value="generic" />
     <preference name="orientation" value="default" />
     <preference name="target-device" value="universal" />
@@ -66,12 +66,12 @@
     <preference name="show-splash-screen-spinner" value="true" />
     <preference name="auto-hide-splash-screen" value="true" />
     <preference name="disable-cursor" value="false" />
-    <preference name="android-minSdkVersion" value="7" />
+    <preference name="android-minSdkVersion" value="14" />
     <preference name="android-installLocation" value="auto" />
     <preference name="AndroidLaunchMode" value="singleTask" />
     <preference name="KeepRunning" value="true" />
     <preference name="InAppBrowserStorageEnabled" value="true" />
-    <preference name="LoadingDialog" value="Pizza King Odense, Velkommen til Pizza King Odense" />
-    <preference name="LoadingPageDialog" value="Pizza King Odense, Velkommen til Pizza King Odense" />
+    <preference name="LoadingDialog" value="Velkommen..." />
+    <preference name="LoadingPageDialog" value="Velkommen..." />
     <preference name="LogLevel" value="WARN" />
 </widget>
