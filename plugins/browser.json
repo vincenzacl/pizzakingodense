@@ -1,0 +1,24 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.webwapsolutions.epizzaapp.pappaspizza"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "com.webwapsolutions.epizzaapp.pappaspizza"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.webwapsolutions.epizzaapp.pappaspizza"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.webwapsolutions.epizzaapp.pappaspizza"
+        }
+    },
+    "dependent_plugins": {}
+}
