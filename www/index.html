@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <!--
     Copyright (c) 2012-2014 Adobe Systems Incorporated. All rights reserved.
@@ -25,23 +24,22 @@
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <title>ePizza Suite App</title>
+        <title>eRestaurant Suite App</title>
 		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 		<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
 		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>        
-		<script type="text/javascript" src="cordova.js" charset="utf-8"></script> 
-		
+		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
         
-        <script type="text/javascript">
-	    function fixiFrame () {
-	       if ((android) && (androidVersion > 3)) {
-		   	document.getElementById('body_content').style.height = document.getElementById('page').offsetHeight + 'px';
-	       }
-	    }        
+        <script type="text/javascript" charset="utf-8">
+	    	function fixiFrame () {
+	       		if ((android) && (androidVersion > 3)) {
+		   			document.getElementById('body_content').style.height = document.getElementById('page').offsetHeight + 'px';
+	       		}
+	    	}        
             function checkConnection() {
-               var networkState = navigator.network.connection.type;
+               var networkState = navigator.connection.type;
                var states = {};
                states[Connection.UNKNOWN]  = 'Unknown connection';
                states[Connection.ETHERNET] = 'Ethernet connection';
@@ -55,7 +53,6 @@
             }        
 		    function onLoad() {
 		    	document.addEventListener("deviceready", onDeviceReady, false);
-		        
 		    	//document.addEventListener("pause", onPause, false);
 		    	//document.addEventListener("resume", onResume, false);
 		    	//document.addEventListener("menubutton", onMenuKeyDown, false);
@@ -63,29 +60,44 @@
 				//document.addEventListener("online", this.onOnline, false);    			
 		    }
             function onDeviceReady() {
-            	var networkState = checkConnection();
-                
+		    	// Depending on the device, a few examples are:
+			   	//   - "Android"
+			   	//   - "BlackBerry 10"
+			   	//   - "browser"
+			   	//   - "iOS"
+			   	//   - "WinCE"
+			   	//   - "Tizen"
+			   	//   - "Mac OS X"
+			   	var devicePlatform = device.platform;
+			   	var model = device.model;
+			   	var uuid = device.uuid;
+			   	var version = device.version;
+			   	//Android
+			   	//BlackBerry 10
+			   	//iOS
+			   	//Windows Phone 7 and 8
+			   	//Windows
+			   	var manufacturer = device.manufacturer;
+            	
+            	//var ref = window.open('http://demo.epizzeria.dk/?app=1', '_blank', 'location=no');
+                var networkState = checkConnection();
                 /* load local files if there is not network connection */
                 if (networkState == Connection.NONE) {
                      navigator.notification.alert('Du har ingen internet forbindelse.');
-                
                 } else {
                     // external url
-                   // navigator.notification.alert('Opening website');
-                	window.open('http://m.pizzaking-odense.dk/?app=1', '_self', 'location=no');
-                    
-                                       
+                    //navigator.notification.alert('Opening website');
+                    //var ref = window.open('http://m.ilparmigiano.no/?app=1', '_self', 'location=no');
+                    var ref = window.open('http://m.pizzaking-odense.dk/?app=1&device='+devicePlatform, '_self', 'location=no');
                 }
-                
-            }	
+            }
         </script>
     </head>
     <body onload="onLoad()">
-    
-    	    	<div id="page" style="height:100%;width:100%;font-size:1.2em;">
-			<div style="text-align:center; padding-top:100px;">
+    	<div id="page" style="height:100%;width:100%;font-size:1.2em;">
+			<div style="text-align:center;">
 				<img src="res/screen/ios/Icon-60@3x.png"><br />
-				<p style="text-shadow:1px -1px 2px rgba(171,152,147,1);font-weight:bold;text-transform:uppercase;color:#000000;letter-spacing:2pt;word-spacing:0pt;font-size:19px;text-align:center;font-family:helvetica, sans-serif;line-height:1;">Vent venligst...</p>
+    			<p style="text-shadow:1px -1px 2px rgba(171,152,147,1);font-weight:bold;text-transform:uppercase;color:#000000;letter-spacing:2pt;word-spacing:0pt;font-size:19px;text-align:center;font-family:helvetica, sans-serif;line-height:1;">Vent venligst...</p>
 			</div>
     	</div>    	
     </body>
